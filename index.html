@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-pink-500 to-purple-500 min-h-screen flex items-center justify-center">
+    <div class="bg-white rounded-lg shadow-lg p-8 w-96">
+        <h1 class="text-3xl font-semibold text-center mb-6 text-gray-800">To-Do List</h1>
+        <div class="flex items-center space-x-4 mb-6">
+            <input type="text" id="task" class="flex-grow rounded-lg p-3 border outline-none text-gray-800" placeholder="Add a new task">
+            <button id="addTask" class="bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-lg">Add</button>
+        </div>
+        <ul id="taskList" class="divide-y divide-gray-300">
+            <!-- Tasks will be added here -->
+        </ul>
+    </div>
+
+    <style>
+         li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        li:last-child {
+            border: none;
+        }
+
+        .delete-button {
+            background-color: #e53e3e;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .delete-button:hover {
+            background-color: #c53030;
+        }
+
+
+    </style>
+
+<script src="main.js"></script>
+</body>
+</html>
